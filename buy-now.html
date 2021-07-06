@@ -7,6 +7,62 @@
     <title>Buy Now</title>
 </head>
 <body>
+    <div>
+        <!--Title-->
+        <h4>Shopping cart</h4>
+        <a href="index.html" class="button">&#10060;</a>
+        <h5>Products</h5>
+    </div>
+    <div>
+    <!--order-->
+        <div>
+            <div>
+                <img src="img/types-of-honey/WildflowerHoney.jpg" alt="WildflowerHoney"> 
+                <p>Clover Honey</p>
+                <p>$8,00USD</p>
+            </div>
+            <div class="quantity">
+                    <input type="text" name="name" value="1">
+                    <button class="minus-btn" type="button" name="button">
+                        <p>&#9650;</p>
+                    </button>
+                    <button class="plus-btn" type="button" name="button">
+                        <p>&#9660;</p>
+                    </button>  
+            </div>
+            <div>
+                <!--simbol delete?????????????-->
+                <button class="delete-btn" type="button" name="button">
+                    <img src="" alt="" />
+                </button>   
+            </div>
+            <div>
+                <p>Total: $23,00USD</p>
+                <p>Place an order</p>
+            </div>        
+        </div>        
+    </div>
+    <div>
+        <form method="POST" action="https://formspree.io/f/meqvzwnj">
+            <label>Name * <br>
+                <input type="text" placeholder="Your name" required name="your-name"> 
+            </label>
+            <br>
+            <label>Email *<br>
+                <input type="text" placeholder="Your email address" required name="Your-email-address">
+            </label>
+            <br>
+            <label>Phone *<br>
+                <input type="text" placeholder="Your phone" required name="Your-phone">
+            </label>
+            <br>
+            <label>Comment <br>
+                <input type="text" placeholder="Your comment" required name="Your-comment">
+            </label>
+            <br>
+            <input type="submit" value="Order">
+        </form>
+    </div>
 
 </body>
 </html>
